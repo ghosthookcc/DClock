@@ -1,5 +1,8 @@
 package com.DynamicClock.app;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 
 public class ProgramBluetoothActivity extends ProgramActivityManager
@@ -9,7 +12,6 @@ public class ProgramBluetoothActivity extends ProgramActivityManager
     public ProgramBluetoothActivity(ProgramActivityManager ActivityManager)
     {
         this.ActivityManager = ActivityManager;
-        Log.println(Log.DEBUG, "debug", "ProgramBluetoothActivityClass ClassPrint " + this.ActivityManager.get_m_App().getClass().getName());
         Log.println(Log.DEBUG, "debug", "ProgramBluetoothActivityClass initialized successfully!");
     }
 }
